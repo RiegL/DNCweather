@@ -1,4 +1,4 @@
 
 Link do site disponibilizado: [Aplicativo de Tempo](https://dncweatherapp.netlify.app/)
 
-(images/ex.png)
+![Texto alternativo da imagem](./images/ex.png)
