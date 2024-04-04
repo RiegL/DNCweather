@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>DNC Weather</title>
+  </head>
+  <body class="body">
+    <!-- Section Header -->
+    <header>
+      <div id="logo">
+        <div>DncWeather</div>
+      </div>
+      <div class="title">
+        <div class="sub-title">Endereços</div>
+        <div class="sub-title">Previsão do tempo</div>
+      </div>
+    </header>
+
+    <!-- Section Content -->
+
+    <div class="container-sm">
+      <div id="span-content">
+        <span>
+          Descubra Mais com Precisão:<br />
+          Previsões do Tempo e endereços<br />
+          em tempo real.
+        </span>
+      </div>
+      <div><img id="weather-img" src="images/weather.svg" alt="weather" /></div>
+    </div>
+
+    <!-- Section Form -->
+
+    <section class="container">
+      <div class="form">
+        <form>
+          <div class="mb-3">
+            <label class="form-label"> Primeiro Nome: </label>
+            <input
+              type="name"
+              class="form-control"
+              id="name"
+              placeholder="Insira seu primeiro nome"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> E-mail: </label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Insira seu e-mail"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Digite o CEP: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="cep"
+              value=""
+              placeholder="Insira seu CEP"
+            />
+          </div>
+
+          <div class="mb-3 input-group" id="loglat">
+            <label class="form-label">
+              Digite a latitude e longitude para saber a previsão:
+            </label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Latitude"
+                id="latitude"
+              />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Longitude"
+                id="longitude"
+              />
+            </div>
+          </div>
+          <div class="d-grid gap-2" id="button-acess">
+            <button class="btn btn-primary" type="button" id="acess" onclick="getCep() , getWeather()">
+              Acessar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section CEP -->
+    <section>
+      <div class="container-sm">
+        <div id="span-content">
+          <span> Resultado da busca por CEP: </span>
+        </div>
+        <div><img src="./images/cep.svg" id="cep-img" alt="cep" /></div>
+      </div>
+    </section>
+
+    <section class="container-cep" >
+      <div class="address-info">
+        <div class="cell">Logradouro/nome</div>
+        <div class="cell">Bairro/Distrito</div>
+        <div class="cell">Localidade/UF</div>
+      </div>
+
+      <div class="example-table">
+        <div class="row">
+          <label id="log" class="cell">Logradouro</label>
+          <label id="bairro" class="cell">Bairro</label>
+          <label id="loc" class="cell">Localidade</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Weather -->
+
+    <section>
+        <div class="container-sm">
+          <div id="span-content">
+            <span>Previsão do tempo na região:</span>
+          </div>
+          <div><img src="./images/cloud.svg" id="cep-img" alt="cloud" /></div>
+        </div>
+      </section>
+  
+      <section class="container-weather" >
+        <div class="weather-info">
+          <div class="cell">Previsão de tempo de acordo com a região: <label id="weather"> </label></div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Section footer -->
+
+      <footer>
+        <div class="title">
+            <div class="sub-title-footer">Termos de Uso | Política de Privacidade</div>
+          </div>
+      </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

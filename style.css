@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter", sans-serif;
+}
+.body {
+  background-color: #f2f2f2;
+}
+
+
+/* Section Header */
+header {
+  background-color: #0c70f2;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.title {
+  flex-direction: row;
+  display: flex;
+  gap: 25px;
+  margin-right: 50px;
+}
+
+#logo {
+  margin-left: 25px;
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+}
+
+.sub-title {
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+/* Section Content */
+
+.container-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  gap: 50px;
+}
+
+#span-content {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#weather-img {
+  width: 60%;
+}
+
+/* Section Form */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    font-size: 18px;
+    width: 50%; 
+    padding: 45px; 
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+ 
+  .input-group{
+    gap: 10px;
+  }
+
+#name, #email,#cep ,#longitude,#latitude{
+    background-color: #F2F2F2E5;
+    font-size: 15px;
+}
+
+#acess{
+    font-size:20px;
+    border-radius: 8px;
+}
+
+#button-acess{
+    margin-top: 50px;
+}
+
+/* Section CEP */
+
+#cep-img{
+    width: 50%;
+}
+
+.container-cep {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .address-info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #0C70F2;
+  }
+  
+  .example-table {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+  /* Section Weather */
+
+  .container-weather {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .weather-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Section footer */
+
+  footer{
+    background-color: #0c70f2;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+  }
+
+  .sub-title-footer{
+    font-size: 20px;
+    color: white;
+  }
